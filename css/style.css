@@ -10,17 +10,32 @@ body{
 }
 
 
-
-/* Style for header section */
-
-nav{
-
-   display: flex;
-   justify-content: space-around;
+.common-button{
+  background-color: #FF900E;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
-nav h2{
-   
+/* End the style of common section */
+
+
+
+
+/* Start the Style of header section */
+header{
+   background-color: rgba(255, 144, 14, 0.1);
+}
+
+nav{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 30px;
 }
 
 
@@ -30,9 +45,11 @@ nav h2{
    column-gap: 30px;
 }
 
+
 .nav-menu{
    list-style: none;
 }
+
 
 .nav-menu a{
    text-decoration: none;
@@ -40,3 +57,127 @@ nav h2{
    font-size: 18px;
    font-weight: 500;
 }
+
+/* Responsive of nav */
+@media screen and (max-width:480px) {
+
+   .header-body-container{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+
+   .nav{
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .menu-container{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+   }
+
+   .nav-menu a:hover{
+      text-decoration: underline;
+   }
+}
+
+
+/* style of header body */
+.header-body-container{
+   width: 662px;
+   text-align: center;
+   margin: 0px auto;
+   margin-bottom: 50px;
+}
+
+.header-body{
+   width: 662px;
+   text-align: center;
+   margin: 0px auto;
+}
+
+
+.header-body h1{
+   font-size: 50px;
+   font-weight: 700;
+}
+
+
+.header-img {
+   display: flex;
+   justify-content: center;
+}
+
+
+.header-img img{
+   width: 80%;
+   height: 600px;
+   border-radius: 10px;
+}
+/* End the Style of header section */
+
+
+
+/* Start the style of features section */
+.features-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1300px;
+  justify-items:center;
+  align-items: center;
+  margin: 0px auto;   
+}
+
+
+.img-features img{
+   width: 300px;
+   height: 300px;
+   border-radius: 5px;
+}
+
+
+.article-features{
+   width: 537px;
+}
+
+.article-features span{
+   color: #FF900E;
+}
+
+
+/* Responsive of features */
+@media screen and (max-width:480px){
+
+   .features-container{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .first-img-features {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      margin-bottom: 20px;
+      
+   }
+
+   .last-img-features{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      margin-bottom: 20px;
+   }
+}
+
+
+
+
+
+
+/* End the style of features section */
+
+/* .hide{
+   display: none;
+} */
