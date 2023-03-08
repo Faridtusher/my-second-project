@@ -170,14 +170,62 @@ nav{
       margin-bottom: 20px;
    }
 }
-
-
-
-
-
-
 /* End the style of features section */
+
+
+
+
+/* Start the experience style */
+.experience-header{
+   text-align: center;
+   width: 586px;
+   margin: 0px auto;
+   margin-top: 50px; 
+}
+
+
+.experience-details{
+   display: flex;
+   align-items: center;
+   column-gap: 20px;
+   padding: 20px 50px 0px 70px;
+}
+
+
+.experience-body{
+   margin-bottom: 10px;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+
+.experience-img img{
+   height:665px;
+   width: 700px;
+   border-radius: 5px;
+}
+
+
+@media screen and (max-width:480px) {
+   .experience-details{
+      flex-direction: column-reverse;
+      row-gap: 20px;
+
+   }
+   
+}
+
+
+
+/* End the experience style */
+
+
+
+
 
 /* .hide{
    display: none;
 } */
+
+
