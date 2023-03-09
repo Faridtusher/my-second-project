@@ -211,21 +211,9 @@ nav{
    .experience-details{
       flex-direction: column-reverse;
       row-gap: 20px;
-
-   }
-   
+   } 
 }
 
-
-
 /* End the experience style */
-
-
-
-
-
-/* .hide{
-   display: none;
-} */
 
 
